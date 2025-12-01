@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr Earning - Network Marketing</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f4f4; color: #222; margin: 0;}
+        header { background: #086972; color: #fff; padding: 24px; text-align: center;}
+        .container { max-width: 940px; margin: 30px auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 0 24px rgba(0,0,0,0.09);}
+        .packages { display: flex; gap: 22px; justify-content: center; flex-wrap: wrap;}
+        .package {
+            flex: 1 1 270px;
+            background: #fafafa;
+            border: 2px solid #14b79a;
+            border-radius: 10px;
+            margin-bottom: 22px;
+            padding: 22px;
+        }
+        .package.gold { border-color: #FFD700; }
+        .package.platinum { border-color: #00BFFF; }
+        .package.diamond { border-color: #08D9D6; }
+        .package h3 { margin-top:0;}
+        .price { font-size: 1.4em; font-weight: bold; margin-bottom: 10px;}
+        .cta {
+            background: #086972;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 22px;
+            border-radius: 6px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .features { margin-top: 3px; margin-bottom: 16px; }
+        .info-list li {margin-bottom:5px;}
+        .guide-section {
+            margin-top: 24px;
+            background: #eafaf7;
+            border-radius: 8px;
+            padding: 16px 22px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.04);
+        }
+        .guide-section h2 { color: #086972;}
+        .guide-section code {background: #f4f4f4; padding: 2px 6px; border-radius: 4px;}
+        .guide-section ol {margin-left: 20px;}
+        .upi-section {
+            margin: 32px 0;
+            background: #feffee;
+            border-radius: 8px;
+            padding: 18px 22px;
+            border: 1.5px dashed #14b79a;
+            text-align: center;
+        }
+        .upi-section h2 { color: #086972;}
+        .upi-id { font-size: 1.2em; font-weight: bold; letter-spacing: 1px; color: #086972; margin-top: 6px;}
+        .copy-upi {
+            margin-top: 10px;
+            background: #14b79a; color: #fff; font-weight: bold; border: none; padding: 8px 18px; border-radius: 5px; cursor: pointer;
+        }
+        .qr-img {
+            display: block;
+            margin: 18px auto 8px auto;
+            max-width: 180px;
+            border-radius: 8px;
+            border: 2px solid #086972;
+            background: #fff;
+        }
+        footer { background: #086972; color: #fff; text-align: center; padding: 14px;}
+    </style>
+    <script>
+    function copyUPI() {
+        const upi = document.getElementById("upiid").innerText;
+        navigator.clipboard.writeText(upi);
+        alert("UPI ID copied: " + upi);
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Dr Earning Network Marketing</h1>
+        <p>Boost your income. Learn, earn, and grow together!</p>
+    </header>
+    <div class="container">
+        <section>
+            <h2>Choose Your Package</h2>
+            <div class="packages">
+                <div class="package gold">
+                    <h3>Gold Package</h3>
+                    <div class="price">₹199</div>
+                    <ul class="features">
+                        <li>Entry-level access to products</li>
+                        <li>Basic training materials</li>
+                        <li>Standard support</li>
+                        <li>Starter commission structure</li>
+                    </ul>
+                </div>
+                <div class="package platinum">
+                    <h3>Platinum Package</h3>
+                    <div class="price">₹399</div>
+                    <ul class="features">
+                        <li>Premium product access</li>
+                        <li>Advanced training sessions</li>
+                        <li>Priority support</li>
+                        <li>Higher commissions</li>
+                        <li>Community access</li>
+                    </ul>
+                </div>
+                <div class="package diamond">
+                    <h3>Diamond Package</h3>
+                    <div class="price">₹599</div>
+                    <ul class="features">
+                        <li>All product access</li>
+                        <li>Personal mentorship</li>
+                        <li>24/7 VIP support</li>
+                        <li>Top commission rates</li>
+                        <li>Exclusive VIP events</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Why Join Dr Earning?</h2>
+            <ul class="info-list">
+                <li>No experience needed—full guidance provided</li>
+                <li>Earn commission by selling and referring packages</li>
+                <li>Grow your team and unlock more rewards</li>
+                <li>Flexible working hours—extra income from home</li>
+            </ul>
+        </section>
+        <section class="upi-section">
+            <h2>UPI Payment</h2>
+            <p>Pay instantly for your selected package using UPI!</p>
+            <img src="phonepe-qr.png" alt="Scan to pay via PhonePe" class="qr-img" />
+            <div class="upi-id" id="upiid">7803856449@axl</div>
+            <button class="copy-upi" onclick="copyUPI()">Copy UPI ID</button>
+            <p>Open your UPI app (PhonePe, Google Pay, Paytm, etc.), choose "Send Money," and enter or scan above.</p>
+        </section>
+        <section class="guide-section">
+            <h2>How to Get Your Affiliate Link</h2>
+            <ol>
+                <li>Log in to your affiliate network (e.g., <strong>AffiliateHub</strong>).</li>
+                <li>Search for the product you want to promote (e.g., <strong>XYZ Fitness Tracker</strong>).</li>
+                <li>Click on the product listing.</li>
+                <li>Locate the <strong>Generate Affiliate Link</strong> button or similar.</li>
+                <li>Copy the generated URL, for example:<br>
+                    <code>https://affiliatehub.com/xyzfitnesstracker?affid=YOURUNIQUEID</code>
+                </li>
+            </ol>
+            <p>Share this link anywhere to start earning commissions!</p>
+        </section>
+        <section>
+            <h2>Get in Touch</h2>
+            <p>Email: <a href="mailto:deepakrajaniya951@gmail.com">deepakrajaniya951@gmail.com</a></p>
+            <p>WhatsApp: <a href="https://wa.me/7803856449" target="_blank">7803856449</a></p>
+        </section>
+    </div>
+    <footer>
+        &copy; 2025 Dr Earning. All rights reserved.
+    </footer>
+</body>
+</html>
